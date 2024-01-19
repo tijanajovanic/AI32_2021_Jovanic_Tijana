@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop</title>
+    <link rel="stylesheet" type="text/css" href="./klase.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="./logo/logo.png" >
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <style>
+    body {
+      font-family: "Trirong", serif;
+    }
+    </style>
+</head>
+
+<body  onload="startTime()">
+    <img src="./naslovna/zivotinje.jpg" width="100%" alt="Logo">
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand navbar-background">
+            <div class="container-fluid" width="100%">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./logo/logo.png" width="50px" alt="Logo" > </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Psi</a>
+                            <ul class="dropdown-menu">
+                                <li><a  class="dropdown-item" href="psi.html">O psima</a></li>
+                                <li><a class="dropdown-item" href="hrana_psi.html">Hrana za pse</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mačke</a>
+                            <ul class="dropdown-menu">
+                                <li><a  class="dropdown-item" href="macke.html">O mačkama</a></li>
+                                <li><a  class="dropdown-item" href="hrana_macke.html">Hrana za mačke</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Male životinje</a>
+                            <ul class="dropdown-menu">
+                                <li><a  class="dropdown-item" href="malezivotinje.html">O malim životinjama</a></li>
+                                <li><a  class="dropdown-item" href="hrana_male_zivotinje.html">Hrana za male kućne ljubimce</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ptice</a>
+                            <ul class="dropdown-menu">
+                                <li><a  class="dropdown-item" href="ptice.html">O pticama</a></li>
+                                <li><a  class="dropdown-item" href="hrana_ptice.html">Hrana za ptice</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./rastimozajedno.html">Rastimo zajedno</a>
+                        </li>
+                    </ul>
+                    <div id="txt" class="fs-4 me-3" style="color: white;"></div>
+                </div>
+            </div>
+        </nav>    
+        <div id="progress-bar"></div>
+    </div>
+    
+    <br>
+<br>
+<div class="container-fluid">
+    <div class="row px-5">
+        <h2><b> Hrana za male životinje </b></h2>
+    </div>
+</div>
+<br>
+<br>
+<br>
+
+<div class="container pt-4  ">
+    <div class="row row-cols-4 g-3">
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_male_zivotinje/hrana1.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        VERSELE LAGA Complete Cuni Sensitive peletirana hrana za kuniće, 500g
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_male_zivotinje/hrana2.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        VERSELE LAGA Crispy Muesli Guinea Pigs hrana za zamorčiće
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_male_zivotinje/hrana3.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        VERSELE LAGA Crispy Muesli Rabbits hrana za kuniće
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_male_zivotinje/hrana4.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        VERSELE LAGA Classic Cuni hrana za kuniće, 500g
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_male_zivotinje/hrana5.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        BRIT ANIMALS Rabbit Adult, peletirana hrana za odrasle kuniće
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_male_zivotinje/hrana6.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        PADOVAN GrandMix Cincilla hrana za činčile 850g
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_male_zivotinje/hrana7.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        VERSELE LAGA Crispy Pellets Chinchilla&Degus hrana za činčile i degue, 1kg
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_male_zivotinje/hrana8.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        NUTRIPET Hrana za hrčke 400g
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_male_zivotinje/hrana9.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        VERSELE LAGA Crispy Muesli Rabbits Big peletirana hrana za velike kuniće, 2,75kg
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_male_zivotinje/hrana10.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        VERSELE LAGA Nature Chip hrana za veverice, 700g
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_male_zivotinje/hrana11.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        VITAKRAFT Premium Menu, pašteta za ježeve, 100g
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_male_zivotinje/hrana12.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        BRIT ANIMALS Hamster, peletirana hrana za hrčke, 100g
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>
+
+<br><br><br><br><br>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+           <div class="text-center">
+    <h2>Hrana za male životinje</h2>
+    <br> 
+    <div class="container-sm d-flex justify-content-center">
+        <div class="row px-5">
+           <p> Svi proizvodi u našem asortimanu pažljivo su odabrani od strane stručnjaka koji razumiju potrebe različitih vrsta malih životinja. Naša hrana je proizvedena od najkvalitetnijih sastojaka, bez dodataka koji bi mogli štetiti vašem ljubimcu. Uzimamo u obzir i posebne dijetetske potrebe, osiguravajući da imamo opcije prilagođene svim vrstama i starosnim skupinama </p>  
+           <p>Znamo koliko je važno da hrana bude ne samo nutritivno bogata, već i ukusna. Naš asortiman uključuje<b> raznovrsne okuse i teksture,</b> kako bismo zadovoljili čula vašeg ljubimca i osigurali da obrok bude pravo zadovoljstvo za njih.</p>
+           <p>Svesni smo da pojedini ljubimci imaju <b>specifične prehrambene potrebe ili alergije.</b> Zbog toga nudimo i specijalne dijetalne opcije, uključujući hranu bez žitarica, bez dodataka i prilagođenu zahtjevima za određenim vrstama životinja.</p>
+
+       </div>
+    </div>  
+</div>
+<div class="row fixed-bottom">
+    <div class="col d-flex align-items-center footer">
+        <span class="ms-5">
+            Za više informacija kontaktirajte nas preko email-a:
+        </span>
+
+        <a href="mailto:marinatopalovic44@gmail.com">marinatopalovic44@gmail.com</a>
+
+        <a href="mailto:tijana.jovanic123@gmail.com">tijana.jovanic123@gmail.com</a>
+
+        <a href="mailto:annarazic@gmail.com>">annarazic@gmail.com</a>
+    </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

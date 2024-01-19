@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop</title>
+    <link rel="stylesheet" type="text/css" href="./klase.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="./logo/logo.png" >
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <style>
+    body {
+      font-family: "Trirong", serif;
+    }
+    </style>
+
+</head>
+
+<body  onload="startTime()">
+    <img src="./naslovna/zivotinje.jpg" width="100%" alt="Logo">
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand navbar-background">
+            <div class="container-fluid" width="100%">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./logo/logo.png" width="50px" alt="Logo" > </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Psi</a>
+                            <ul class="dropdown-menu">
+                                <li><a  class="dropdown-item" href="psi.html">O psima</a></li>
+                                <li><a class="dropdown-item" href="hrana_psi.html">Hrana za pse</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mačke</a>
+                            <ul class="dropdown-menu">
+                                <li><a  class="dropdown-item" href="macke.html">O mačkama</a></li>
+                                <li><a  class="dropdown-item" href="hrana_macke.html">Hrana za mačke</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Male životinje</a>
+                            <ul class="dropdown-menu">
+                                <li><a  class="dropdown-item" href="malezivotinje.html">O malim životinjama</a></li>
+                                <li><a  class="dropdown-item" href="hrana_male_zivotinje.html">Hrana za male kućne ljubimce</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ptice</a>
+                            <ul class="dropdown-menu">
+                                <li><a  class="dropdown-item" href="ptice.html">O pticama</a></li>
+                                <li><a  class="dropdown-item" href="hrana_ptice.html">Hrana za ptice</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./rastimozajedno.html">Rastimo zajedno</a>
+                        </li>
+                    </ul>
+                    <div id="txt" class="fs-4 me-3" style="color: white;"></div>
+                </div>
+            </div>
+        </nav>    
+        <div id="progress-bar"></div>
+    </div>
+
+
+    <a target="_blank" href="./O pticama/Pocetna.png"><img src="./O pticama/Pocetna.png"width="100%" alt="Pocetna"></a>
+
+<br><br><br>
+
+<div class="container-fluid">
+    <div class="text-center">
+        <h2><b> O pticama </b></h2>
+    </div>
+    <br>
+
+    <div class="text-animals">
+        <p>
+            Naš Pet shop Vam nudi najveći izbor hrane i kaveza za ptice, koji će podstaći pernatog ljubimca na igru i interakciju i omogućiti razvoj inteligencije!<br><br>
+
+            Hrana za papagaje zavisi od vrste papagaja glavna podela je na male, velike i srednje. Za pravilno vođenje računa o higijeni ptice, ključno je redovno održavanje kaveza. Ptice su vrlo živahni i veseli ljubimci koji vole ogledala, ljuljaške, merdevine, zvonca, tako da u našoj ponudi možete naći raznovrsne igračke za papagaje.<br><br>
+
+            Pet shop radnje su svoj asortiman obogatile i raznim poslasticama i dodacima ishrani među kojima su sipina kost, bar u klasu, minerali, poslastice različitih ukusa i specijalizovani dodaci ishrani za sjaj perja i pospešivanje energije.
+
+            Na Vama je samo da joj pružite mnogo ljubavi.
+        </p>
+    </div>
+    
+</div>
+<br><br><br>
+
+
+<div class="container-fluid text-center">
+    <div class="row px-5" >
+        <h4><b> Istaknute kategorije za ptice </b></h4>
+    </div>
+</div>
+
+<div class="container d-flex flex-column justify-content-center align-items-center">
+    <div class="row row-cols-4 pt-5 g-3">
+        <div class="col ">
+            <div class="card h-100 text-center">
+                <img src="./O pticama/HranaZaPtice.jpg" class="card-img-top" alt="Arcanine">
+                <div class="card-body">
+                    <div class="card-text">
+                        HRANA ZA PTICE
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card h-100 text-center">
+                <img src="./O pticama/PoslasticeZaPtice.jpg" class="card-img-top" alt="Bulbasaur">
+                <div class="card-body">
+                    <div class="card-text">
+                        POSLASTICE ZA PTICE
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card h-100 text-center">
+                <img src="./O pticama/OpremaZaPtice.jpg" class="card-img-top" alt="Oddish">
+                <div class="card-body">
+                    <div class="card-text">
+                        OPREMA ZA PTICE
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card h-100 text-center">
+                <img src="./O pticama/DodaciIshraniZaPtice.jpg" class="card-img-top" alt="Seel">
+                <div class="card-body">
+                    <div class="card-text">
+                        DODACI ISHRANI ZA PTICE
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row fixed-bottom">
+    <div class="col d-flex align-items-center footer">
+        <span class="ms-5">
+            Za više informacija kontaktirajte nas preko email-a:
+        </span>
+
+        <a href="mailto:marinatopalovic44@gmail.com">marinatopalovic44@gmail.com</a>
+
+        <a href="mailto:tijana.jovanic123@gmail.com">tijana.jovanic123@gmail.com</a>
+
+        <a href="mailto:annarazic@gmail.com>">annarazic@gmail.com</a>
+    </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop</title>
+    <link rel="stylesheet" type="text/css" href="./klase.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="./logo/logo.png" >
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <style>
+    body {
+      font-family: "Trirong", serif;
+    }
+    </style>
+</head>
+
+<body  onload="startTime()">
+    <img src="./naslovna/zivotinje.jpg" width="100%" alt="Logo">
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand navbar-background">
+            <div class="container-fluid" width="100%">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./logo/logo.png" width="50px" alt="Logo" > </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Psi</a>
+                            <ul class="dropdown-menu">
+                                <li><a  class="dropdown-item" href="psi.html">O psima</a></li>
+                                <li><a class="dropdown-item" href="hrana_psi.html">Hrana za pse</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mačke</a>
+                            <ul class="dropdown-menu">
+                                <li><a  class="dropdown-item" href="macke.html">O mačkama</a></li>
+                                <li><a  class="dropdown-item" href="hrana_macke.html">Hrana za mačke</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Male životinje</a>
+                            <ul class="dropdown-menu">
+                                <li><a  class="dropdown-item" href="malezivotinje.html">O malim životinjama</a></li>
+                                <li><a  class="dropdown-item" href="hrana_male_zivotinje.html">Hrana za male kućne ljubimce</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ptice</a>
+                            <ul class="dropdown-menu">
+                                <li><a  class="dropdown-item" href="ptice.html">O pticama</a></li>
+                                <li><a  class="dropdown-item" href="hrana_ptice.html">Hrana za ptice</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./rastimozajedno.html">Rastimo zajedno</a>
+                        </li>
+                    </ul>
+                    <div id="txt" class="fs-4 me-3" style="color: white;"></div>
+                </div>
+            </div>
+        </nav>    
+        <div id="progress-bar"></div>
+    </div>
+    
+    <br>
+<br>
+<div class="container-fluid">
+    <div class="row px-5">
+        <h2><b> Hrana za ptice </b></h2>
+    </div>
+</div>
+<br>
+<br>
+
+<div class="container d-flex flex-column justify-content-center align-items-center ">
+    <div class="row row-cols-4 pt-5 g-3">
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_ptice/hrana1.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        PADOVAN GrandMix Parrocchetti hrana za srednje papagaje
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_ptice/hrana2.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        VERSELE LAGA Prestige Big Parakeets, hrana za srednje papagaje, 1kg
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_ptice/hrana3.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        NUTRIPET Hrana za ptice Suncokret 300g
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card h-100 text-center ">
+                <img src="./hrana_za_ptice/hrana4.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        VERSELE LAGA Menu Nature 4 Seasons, mešavina za divlje ptice
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_ptice/hrana5.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        PADOVAN GrandMix Cocorite hrana za tigrice
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_ptice/hrana6.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        NUTRIPET Hrana za tigrice 400g
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card h-100 text-center ">
+                <img src="./hrana_za_ptice/hrana7.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        VITAPOL Potpuna hrana za tigrice 500g
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card h-100 text-center ">
+                <img src="./hrana_za_ptice/hrana8.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        PADOVAN GrandMix Pappagalli hrana za velike papagaje 600g
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card h-100 text-center ">
+                <img src="./hrana_za_ptice/hrana9.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        PADOVAN OvoMix Gold Giallo pasta za ptice Žuta
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card h-100 text-center ">
+                <img src="./hrana_za_ptice/hrana10.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        VERSELE LAGA Parrots Exotic Light Mix hrana za velike papagaje 750g
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card h-100 text-center ">
+                <img src="./hrana_za_ptice/hrana11.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        VITAPOL Potpuna hrana za velike papagaje 900g
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card h-100 text-center">
+                <img src="./hrana_za_ptice/hrana12.jpg" class="card-img-top" alt="slika">
+                <div class="card-body">
+                    <div class="card-text">
+                        ORLUX (Versele-Laga) Forti Patee, pate za ptice s jajima i medom 250g
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+<br><br><br><br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="text-center">
+    <h2>Hrana za ptice</h2>
+    <br> 
+    <div class="container-sm d-flex justify-content-center">
+        <div class="row px-5">
+           <p> Razveselite svoje pernate prijatelje s našom raznovrsnom ponudom okusa i tekstura. Od<b>voćnih mješavina do sjemenki s dodatkom vitamina,</b>  trudimo se pružiti širok spektar opcija kako bismo zadovoljili i najizbirljivije apetite ptica.</p>  
+           <p><b>Naručite bez brige -</b> Naručivanje hrane za vaše ptice kod nas je brzo i jednostavno.<b> Posjetite našu web trgovinu</b> i odaberite najbolje za svoje pernate prijatelje. Dostavljamo kvalitetu do vaših vrata. </p>
+           <p>Hranite svoje ptice s ljubavlju i kvalitetnom hranom kako biste im <b>osigurali sretan, zdrav i dug životni vek.</b> Vaše krilate ljubimce smatramo članovima naše proširene porodice!</p>
+
+       </div>
+    </div>  
+</div>
+<div class="row fixed-bottom">
+    <div class="col d-flex align-items-center footer">
+        <span class="ms-5">
+            Za više informacija kontaktirajte nas preko email-a:
+        </span>
+
+        <a href="mailto:marinatopalovic44@gmail.com">marinatopalovic44@gmail.com</a>
+
+        <a href="mailto:tijana.jovanic123@gmail.com">tijana.jovanic123@gmail.com</a>
+
+        <a href="mailto:annarazic@gmail.com>">annarazic@gmail.com</a>
+    </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
